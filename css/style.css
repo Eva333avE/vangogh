@@ -120,6 +120,7 @@ img {
   }
   .card {
     display: block;
+    margin-top: 1rem;
   }
   .card img {
     width: 100%;
