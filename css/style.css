@@ -70,27 +70,59 @@ img {
 }
 
 .card:nth-child(even) img {
-    order: 2;
+  order: 2;
 }
 
 .btn {
-    display: inline-block;
-    background: #e03214;
-    color: #4148a5;
-    padding: 0.8rem 1.8rem;
-    margin-top: 2rem;
-    cursor: pointer;     
+  display: inline-block;
+  background: #e03214;
+  color: #4148a5;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background: #4d0d02;
+  background: #4d0d02;
+}
+
+@media (max-width: 1140px) {
+  .main-header {
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .main-header h1 {
+    flex-wrap: wrap;
+  }
+  .main-header p {
+    font-size: 1.8rem;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 576px) {
-   .card { 
+  .main-header {
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .main-header h1 {
+    flex-wrap: wrap;
+  }
+  .main-header p {
+    font-size: 1.8rem;
+  }
+  .card {
     display: block;
-   }
-   /* .card img {
-       overflow: hidden;   // найди как уменьшить фото!!
-   }   */
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 }
